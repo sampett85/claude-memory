@@ -2,7 +2,6 @@
 
 Personal knowledge base that automatically captures insights from Claude Code conversations, compiles them into structured markdown articles, and syncs to Obsidian.
 
-Enhanced fork of [coleam00/claude-memory-compiler](https://github.com/coleam00/claude-memory-compiler) with:
 - **Project-scoped memory** — auto-tags articles with your project name
 - **Obsidian sync** — mirrors knowledge to your Obsidian vault on compile
 - **Auto-tagging** — detects tech stack and domain tags automatically
