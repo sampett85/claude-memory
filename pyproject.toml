@@ -1,5 +1,5 @@
 [project]
-name = "claude-memory"
+name = "mister-agent-memory"
 version = "1.0.0"
 description = "Personal knowledge base compiled from AI conversations — with Obsidian sync, auto-tagging, and weekly digests"
 requires-python = ">=3.12"

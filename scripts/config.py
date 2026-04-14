@@ -1,4 +1,4 @@
-"""Path constants and configuration for claude-memory."""
+"""Path constants and configuration for mister-agent-memory."""
 
 import os
 from pathlib import Path
@@ -23,7 +23,7 @@ INDEX_FILE = KNOWLEDGE_DIR / "index.md"
 LOG_FILE = KNOWLEDGE_DIR / "log.md"
 STATE_FILE = SCRIPTS_DIR / "state.json"
 
-# Project root (parent of .memory/ or claude-memory/)
+# Project root (parent of .memory/ or mister-agent-memory/)
 PROJECT_DIR = ROOT_DIR.parent
 
 # ── Load config.env ────────────────────────────────────────────────────

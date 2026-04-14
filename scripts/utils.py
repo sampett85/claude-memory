@@ -1,4 +1,4 @@
-"""Shared utilities for claude-memory."""
+"""Shared utilities for mister-agent-memory."""
 
 import hashlib
 import json
