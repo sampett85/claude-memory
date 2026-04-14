@@ -47,6 +47,21 @@ def build_context() -> str:
     parts.append(f"## Today\n{today.strftime('%A, %B %d, %Y')}")
     parts.append(f"## Project\n{_project_name}")
 
+    # Instructions for Claude on how to use the knowledge base
+    parts.append("""## Instructions: Using Your Knowledge Base
+
+You have a personal knowledge base for this project. Before starting any task:
+
+1. **Check the index below** for articles relevant to what you're about to do
+2. **Read relevant articles** by opening files in `.memory/knowledge/concepts/` or `.memory/knowledge/connections/`
+3. **Follow past decisions** — if a decision was already made (e.g., "chose Next.js App Router"), don't re-discuss it unless asked
+4. **Avoid past mistakes** — check Lessons Learned sections for gotchas
+5. **Continue action items** — check if there are open TODOs from previous sessions
+
+To search the full knowledge base: `cd .memory && uv run python scripts/query.py "your question"`
+
+If you learn something new during this session, it will be automatically captured when the session ends.""")
+
     if INDEX_FILE.exists():
         index_content = INDEX_FILE.read_text(encoding="utf-8")
         parts.append(f"## Knowledge Base Index\n\n{index_content}")
